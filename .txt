@@ -1,0 +1,13 @@
+!Component::::A component is a reusable and self-contained unit that encapsulates a specific piece of functionality or UI.Components are a fundamental building blocks of bue applications and they allow you to organize and structure your code in a modular way.
+
+!WHY COMPONENTS:::
+1.MODULARITY:::
+Components allow you to break down your application into smarter,reusable pieces.Each component is responsible for a specific feature or functionality,making it easier to understand and maintain your code.
+2.Reusability:::Components can be reused across different parts of your application or even in multiple projects.This reusability reduces redundancy in your code and speeds up your development. 
+3.Maintainability:::with components,it's easier to manage & maintain your codebase.Each component is a self-contained unit with it's own functionality,making it simpler to troubleshoot & update.
+
+/???Text interpolation:::
+it refers to the process of dynamically binding data to the content of an HTMl element in your template.It allows you to display the value of a js expression or a variable within the markup.
+
+/???Text interpolation:::Attribute binding::
+Attribute binding is a way to bind HTML attributes to data in vue instance.
