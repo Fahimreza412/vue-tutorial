@@ -38,11 +38,21 @@
 
 // !Computed properties
 
-import computed from "./components/Event-handlers/computed.vue"
+// import computed from "./components/Event-handlers/computed.vue"
 
 // ! Job tracker::
 // import JobTracker from "./components/Event-handlers/jobTracker.vue";
 // import computed from "./components/Event-handlers/jobTracker.vue"
+
+// !conditional Rendering
+// import conditionalRendering from './components/conditional-Rendering/conditionalRendering.vue';
+
+// !v-for:::
+import vFor from './components/vFor.vue';
+
+// !v-MOdel:::
+
+// import vModel from './components/vModel.vue';
 
 
 
@@ -68,7 +78,7 @@ import computed from "./components/Event-handlers/computed.vue"
 <!-- <LocalStyle/> -->
 <!-- !Styling in depth -->(CombinedStyle) 
 <!-- <CombinedStyle/> -->
-<!-- !Styling in depth -->(ModuledStyle) 
+<!-- !Styling in depth --> (ModuledStyle) 
 <!-- <ModuleStyle /> -->
 <!-- *Styling in vue(End) -->
 
@@ -85,9 +95,22 @@ import computed from "./components/Event-handlers/computed.vue"
 <!-- !ref & reactive both -->
  <!-- <refReactive/> -->
   <!-- !computed properties -->
-   <computed/>
+   <!-- <computed/> -->
+
+   <!-- !conditional rendering -->
+   <!-- <conditionalRendering /> -->
+
+<!-- !v-for -->
+<vFor/>
+
+ <!-- !v-model -->
+
+  <!-- <vModel/> -->
+
+
    <!-- !jobTracker -->
 <!-- <JobTracker/> -->
+
 
 </template>
 <style scoped></style>

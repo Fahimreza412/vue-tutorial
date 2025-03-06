@@ -54,7 +54,7 @@ const changeUser = () => {
 </template> -->
 
 <!-- ! -->
-<script setup>
+<!-- <script setup>
 import { reactive } from 'vue';
 
 let state = reactive({
@@ -64,13 +64,13 @@ let state = reactive({
 const changeUser = () => {
     state.user[0] = "Shafin"
     state.user[1] = "Ahmed"
-}
+} -->
 
 //  Modify properties directly (no .value)
 // state.user.name = 'Bob'; // Triggers reactivity
-</script>
+<!-- </script> -->
 
-<template>
+<!-- <template>
 <h1>Users::{{ state.user }}</h1>
 <button @click="changeUser">Change User</button><br>
 
@@ -78,7 +78,7 @@ const changeUser = () => {
 <button @click="state.user.pop('')">reduce One More</button>
 <button @click="state.user.unshift('')">UnShift</button>
 <button @click="state.user.shift('')">Shift</button>
-</template>
+</template> -->
 
 
 
