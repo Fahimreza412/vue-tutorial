@@ -10,20 +10,20 @@
 
 
 
-<script setup>
+<!-- <script setup>
 import {ref} from 'vue'
-let people = ref(['fahim','Reza',"saxx"])
+let people = ref(['fahim','Reza',"seii"])
 
 </script>
 
 <template>
     <h1 v-for="(person, index) in people" :key="index">{{ person }}</h1>
     <h1 v-for="(person, index) in people" :key="index">{{ index }}</h1>
-</template>
+</template> -->
 
 <!-- !for object part -->
 
-<!-- <script setup>
+ <script setup>
 import { ref } from 'vue'
 const books = ref([
     {
@@ -63,11 +63,11 @@ const books = ref([
     }
 ])
 
-</script> -->
-<!-- <template>
-    <h3 v-for="(content,index) in books" :key="index">{{ content }}</h3> -->
+</script> 
+ <template>
+    <h3 v-for="(content,index) in books" :key="index">{{ content }}</h3> 
 <!-- ?Now,destructring the object -->
-<!-- <ul v-for="({id,tittle,author,genre,publicationYear},i) in books" :key="i">
+ <ul v-for="({id,tittle,author,genre,publicationYear},i) in books" :key="i">
     <li>ID:: {{ id }}</li>
     <li>:: {{ tittle }}</li>
     <li>author:: {{ author }}</li>
@@ -75,7 +75,7 @@ const books = ref([
     <li>publicationYear:: {{ publicationYear }}</li>
 
 </ul>
-</template> -->
+</template> 
 
 <!-- !Example::2 -->
  <!-- <script setup>

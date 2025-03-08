@@ -48,11 +48,167 @@
 // import conditionalRendering from './components/conditional-Rendering/conditionalRendering.vue';
 
 // !v-for:::
-import vFor from './components/vFor.vue';
+
+// import vFor from './components/vFor.vue';
 
 // !v-MOdel:::
 
 // import vModel from './components/vModel.vue';
+
+// !Props:::
+
+// import StaticPropsComponents from "./components/props/StaticPropsComponents.vue"
+
+// !Dynamic-props
+//  import {ref} from 'vue'
+// const firstName = ref("Fahim")
+// const lastName = ref("reza")
+
+// import DynamicProps from "./components/props/DynamicProps.vue"
+
+// !Changing-props
+// import {ref} from 'vue'
+
+// import changingPropsvalue from "./components/props/changingPropsValue.vue"
+// const num = ref(69)
+
+
+// !propValidation:::
+// import {ref}  from 'vue'
+// import propValidation from "./components/props/propValidation.vue"
+
+// !ComplexProps::v
+
+// import {ref} from 'vue'
+
+// import ComplexProps from "./components/props/ComplexProps.vue"
+
+// !ComplexProps::v
+// import { ref } from 'vue'
+
+//  import customValidator from "./components/props/customValidator.vue"
+
+// !ComponentEvent(emit)
+// import componentEvent from "./components/componentEvent/componentEvent.vue"
+// import { ref } from 'vue'
+// let count = ref(0)
+
+// !Form component:::
+// import formComponent from "./components/componentEvent/formComponent.vue"
+
+
+// const formHandler = (username, email, password) => {
+//    console.log('username', username);
+//    console.log('email', email);
+//    console.log('password', password);
+   
+// }
+
+// !!!!!!Slot component::
+// import { ref } from 'vue'
+
+// import slotComponent from "./components/slots/slotComponent.vue"
+// !!!!!!fallbackComponent Slot component::
+
+// import { ref } from 'vue'
+
+// import namedSlots from "./components/slots/namedSlots.vue"
+
+// !defaultslot:::
+
+// import { ref } from 'vue'
+
+// import defaultSlot from "./components/slots/defaultSlots.vue"
+
+// !Provide & inject:::
+//  !StudentComponent
+
+// import { ref } from 'vue'
+
+
+
+// import studentComponent from "./components/provide & inject/studentComponent.vue"
+
+// !School component
+
+// !Typical way to call nested components..
+
+//  import { ref } from 'vue'
+//  import  schoolComponent from "./components/provide & inject/SchoolComponent.vue"
+
+//  const studentName = 'Alex'
+// const studentAge = 20
+// const studentLocation = ['Rajshahi','Boalia']
+
+// !!!!!!!!!!Using nested methods:::
+//  import  schoolComponent from "./components/provide & inject/SchoolComponent.vue"
+// import { provide } from 'vue'
+// provide('studentName', 'Fahim' )
+// provide('studentAge', 20 )
+// provide('studentLocation', ['Rajshahi' ,'Boalia'] )
+
+// !practiceComponent:::
+
+// import { ref } from 'vue'
+// import practiceComponent from './components/provide & inject/practiceComponent.vue'
+// import {provide} from 'vue'
+
+// !Provide Array
+// provide('friends', ['shafin','ahmed','Fahim' ,'Reza'] )
+// !provide Object:::
+// provide('games', {
+//    id:1,
+//    tittle: 'Epic game Adventure',
+//    genre:['action','Adventure','RPG' ],
+//    Platform:['PC', 'PlayStation','XBox','Nintendo Switch' ],
+//    releaseDate:['action','Adventure','RPG' ],
+//    developer:{
+//       name:'awesome Game Studios',
+//       location:'San Fransisco,LA',
+//       teamSize:50,
+//    }}
+// )
+
+// !Provides Array of Objects:;
+
+// provide('moreGames', [
+//    {
+//       id:2,
+//       tittle: 'Space Explorer',
+//       genre:'Sci-Fi',
+//       platform:'PC',
+//       releaseDate:'2023-05-20'
+//    },
+//    {
+//       id:3,
+//       tittle: 'Fantasy Quest',
+//       genre:'Fantasy',
+//       platform:'PlayStation',
+//       releaseDate:'2023-07-20'
+//    },
+//    {
+//       id:4,
+//       tittle: 'Inception',
+//       director:'Christopher Nolan',
+//       genre:'Sci-Fi',
+//       // platform:'PC',
+//       releaseDate:'2023-05-20'
+//    },
+//    {
+//       id:5,
+//       tittle: 'The ShawsShank RedempTion',
+//       director:'Frank Darabont',
+//       genre:'Drama',
+//       // platform:'PC',
+//       releaseDate:'2023-05-20'
+//    }
+  
+// ])
+
+
+// !!LifeCycle component:::
+
+
 
 
 
@@ -101,13 +257,99 @@ import vFor from './components/vFor.vue';
    <!-- <conditionalRendering /> -->
 
 <!-- !v-for -->
-<vFor/>
+<!-- <vFor/>  -->
 
  <!-- !v-model -->
 
   <!-- <vModel/> -->
 
 
+  <!-- ?props -->
+   <!-- *Static Props -->
+
+   <!-- <StaticPropsComponents name="fahim" age="23"/> -->
+
+   <!-- *Dynamic props -->
+   
+   <!-- <DynamicProps  :firstName="firstName" :lastName="lastName" /> -->
+
+   <!-- *Changing Props -->
+    <!-- <changingPropsvalue :num="num" /> -->
+
+    <!-- *PropValidation -->
+     <!-- <propValidation :fullName="reza" :age="20"/> -->
+
+<!-- !COmpelxProps -->
+
+ <!-- <ComplexProps
+  :friends="['alex','fahim','reza','ahmed']" 
+ :userInfo="{ name:'alex', age:20, location: ['Rajshahi','IDK']} "/> -->
+
+<!-- !customValidator -->
+ <!-- <customValidator name="Reza" :age="20" password="randomPassword" /> -->
+
+<!-- !componentEvent -->
+ <!-- <h1>Count:: {{ count }}</h1>
+ <componentEvent @incrementCounter="count++" @decrementCounter="count--"  /> -->
+
+<!-- !formComponent -->
+
+<!-- <formComponent @userInfo="formHandler" /> -->
+
+<!-- !Slot -->
+ <!--?not this way  -->
+<!-- <slotComponent/> -->
+ <!-- ?this way -->
+  <!-- <slotComponent>
+   <h1>Content1</h1>
+  </slotComponent> -->
+<!-- !fallbackContent -->
+
+<!-- <hr/> -->
+<!-- <fallcackContent></fallcackContent> -->
+<!-- <fallcackContent>Fallback will not work because I'm providing content inside the component.</fallcackContent> -->
+
+<!-- !NamedSlots -->
+<!-- <namedSlots> -->
+
+   <!-- ! v-slot:one -->
+   <!-- <template v-slot:one>
+      <h1>This content will go to slot "one"</h1>
+   </template> -->
+
+   <!--! #two -->
+   <!-- <template #two>
+      <h1>This content will go to slot "two"</h1>
+   </template> -->
+
+<!-- </namedSlots> -->
+
+<!-- ?defaultSlots -->
+ 
+<!-- <defaultSlot>
+   <template #default>
+      <h1>This is some random default content here</h1>
+
+   </template>
+</defaultSlot> -->
+
+<!-- !!!!!Provide & Inject(start) -->
+<!-- *student -->
+<!-- <studentComponent/> -->
+
+<!-- *School -->
+<!-- ??typical way to call nested data -->
+<!-- <schoolComponent :studentName="studentName" :studentAge="studentAge" :studentLocation="studentLocation" /> -->
+
+<!-- *using provide & inject method::: -->
+
+<!-- <schoolComponent/> -->
+
+<!-- ?practice Component -->
+ <practiceComponent/>
+
+
+<!-- !!!!!Provide & Inject(End) -->
    <!-- !jobTracker -->
 <!-- <JobTracker/> -->
 

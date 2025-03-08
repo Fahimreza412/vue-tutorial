@@ -1,0 +1,5 @@
+A slot is like a space in a component where you can put different things.It allows you to create reusable components that can accept different content while maintaining a consistent structure.
+
+!!fallback/defaultContent:::refers to the default content that is displayed when no content is provided for a particular slot . it's a way to ensure that a component still has meaningful content even if the parent component does not pass any content to the specific slot.
+
+!!!NamedSlots::is a way to assign a specific name to a slot in a component.unlike the default slot, which is unnamed and used when no explicit name is provided named slots allow you to have multiple slots in a component and specify where the content should be inserted based on the slot's name.

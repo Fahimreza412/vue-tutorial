@@ -1,0 +1,6 @@
+this options are use  for providing and injecting properties or data down the components hierarchy.They enable a  form of dependency injection, allowing a parent component providing data or methods that child components can the inject and use.
+
+
+!!!Provide::::is an option in a parent component that allows it to share data or methods with it's child components.It makes properties or methods available for injection into child components. 
+
+!!!Inject:::is an option in a child component that specifies which properties or methods it wants to receive from it's parent component.it allows a component to inject and use provided data or methods.
